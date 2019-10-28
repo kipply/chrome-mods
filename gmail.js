@@ -17,6 +17,9 @@ window.onload = function() {
         // Hide emails from default mailbox
         document.getElementsByClassName("D E G-atb bP")[0].parentNode.nextSibling.nextSibling.nextSibling.style.display = 'none'
 
+        // Hide Hangouts
+        document.querySelectorAll('[aria-label="Hangouts"]')[0].style.display = 'none';
+
         // Hide top bar for default mailbox
         Array.from(document.getElementsByClassName("D E G-atb bP")).slice(-1)[0].style.display = 'none'
     }, 500);
